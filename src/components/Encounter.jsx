@@ -8,7 +8,7 @@ class Encounter extends React.Component {
       pokemon: "",
       catchRange: [0, 10],
       fleeRange: [0, 10],
-      caught: 0,
+      caught: 1,
       fled: 0,
       attempts:0
     }
