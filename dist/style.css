@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  margin: 20px;
+  color: #00a07b;
+}
+
+.app {
+  display: flex;
+  flex-flow: row;
+}
+
+.txn {
+  width: 80%;
+  margin: 20px;
+}
+
+#professor {
+  width: 200px;
+  height: 200px;
+}
