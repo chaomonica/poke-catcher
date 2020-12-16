@@ -47,7 +47,7 @@ app.on('ready', function() {
     storage.set('windowBounds', { width, height });
   });
 
-  mainWindow.loadURL('http://localhost:3004/');
+  mainWindow.loadURL(`http://localhost:${process.env.PORT}/`);
 });
 
 /*
