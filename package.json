@@ -10,9 +10,7 @@
   "scripts": {
     "start": "node server/index.js",
     "heroku-prebuild": "npm install --dev",
-    "postinstall": "npm run build:dev",
-    "electron-start": "electron .",
-    "build:dev": "webpack -d --watch"
+
   },
   "keywords": [],
   "author": "",
