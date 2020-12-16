@@ -1,8 +1,8 @@
 {
   "name": "PokeCatcher",
   "version": "1.0.0",
-  "description": "a very cool app",
-  "main": "main.js",
+  "description": "Gotta Catch 'Em ALL!",
+  "main": "server/index.js",
   "engines": {
     "node": "12.x"
   },
