@@ -1,28 +1,28 @@
 {
   "name": "PokeCatcher",
   "version": "1.0.0",
-  "description": "Gotta Catch 'Em ALL!",
-  "main": "server/index.js",
+  "description": "a very cool app",
+  "main": "main.js",
   "engines": {
-    "node": "12.18.x",
-    "npm": "6.14.x"
+    "node": "12.x",
+    "npm": "6.x"
   },
   "scripts": {
-    "heroku-prebuild": "npm install --dev",
     "start": "node server/index.js",
-    "build": "webpack -d --watch",
-    "postinstall": "npm run build",
-
-    "start2": "nodemon server/index.js",
-    "electron-start": "electron ."
+    "heroku-prebuild": "npm install --dev",
+    "postinstall": "npm run build:dev",
+    "electron-start": "electron .",
+    "build:dev": "webpack -d --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "Dependencies": {
+  "devDependencies": {
     "electron": "^11.1.0",
     "nodemon": "^1.18.10",
-    "webpack-cli": "^3.3.12",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
