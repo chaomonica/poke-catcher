@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "a very cool app",
   "main": "main.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -20,9 +23,7 @@
   "devDependencies": {
     "electron": "^11.1.0",
     "nodemon": "^1.18.10",
-    "webpack-cli": "^3.3.12"
-  },
-  "dependencies": {
+    "webpack-cli": "^3.3.12",
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
