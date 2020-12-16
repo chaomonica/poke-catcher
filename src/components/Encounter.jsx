@@ -26,8 +26,9 @@ class Encounter extends React.Component {
 
   generateRandomPokemon () {
     let pokemonNumber = this.randomInt(9);
+    let baseURL = process.env.baseURL || 'http://localhost:3062/encounter';
 
-    axios.get('http://localhost:3062/encounter', {params: {number: pokemonNumber}})
+    axios.get(baseURL, {params: {number: pokemonNumber}})
     .then((data)=>{console.log("this is received: ", data)})
 
 
