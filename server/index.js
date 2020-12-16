@@ -1,30 +1,23 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
+// const bodyParser = require('body-parser');
+// const cors = require('cors');
 
+const routes = require('./routes.js');
 const app = express();
-const PORT = process.env.PORT || 3041;
+const PORT = process.env.PORT || 3062;
 
 
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static('./dist'));
-app.use(cors());
+// app.use(cors());
+app.use('/', routes);
 
-app.get('/', (req, res) => {
-  res.send("yo trainer!")
-})
-// UNCOMMENT FOR REACT
-// app.use(express.static(__dirname + '/../react-client/dist'));
+// app.get('/', (req, res) => {
+//   res.send("yo trainer!")
+// })
 
-// UNCOMMENT FOR ANGULAR
-// app.use(express.static(__dirname + '/../angular-client'));
-// app.use(express.static(__dirname + '/../node_modules'));
-
-// UNCOMMENT FOR BACKBONE
-// app.use(express.static(__dirname + '/../backbone-client'));
-// app.use(express.static(__dirname + '/../node_modules'));
 
 
 app.listen(PORT, () => {

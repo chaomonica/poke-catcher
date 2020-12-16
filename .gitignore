@@ -11,5 +11,5 @@ pids
 logs
 *.log
 
-#API token
+#database connection
 .env

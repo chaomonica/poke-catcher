@@ -5,7 +5,8 @@ import Professor from './components/Professor.jsx';
 import Encounter from './components/Encounter.jsx';
 
 //const stor = require("../dist/bugPokemon.json");
-import get from '../storage.js'
+// import storage from '../main.js';
+
 
 class App extends React.Component {
   constructor(props) {

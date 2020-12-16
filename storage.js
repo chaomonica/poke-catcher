@@ -1,6 +1,7 @@
 const electron = require('electron');
 const path = require('path');
 const fs = require('fs');
+// const fs = window.require('fs');
 
 /*
 https://medium.com/cameron-nokes/how-to-store-user-data-in-electron-3ba6bf66bc1e
@@ -45,7 +46,4 @@ function parseDataFile(filePath, defaults) {
   }
 }
 
-module.exports = {
-  get: get,
-  set: set
-};
+module.exports = Storage;

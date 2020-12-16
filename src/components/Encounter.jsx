@@ -1,5 +1,5 @@
 import React from 'react';
-
+import axios from 'axios';
 
 class Encounter extends React.Component {
   constructor(props) {
@@ -25,14 +25,13 @@ class Encounter extends React.Component {
   }
 
   generateRandomPokemon () {
-    console.log("generating!");
-    //bug pokemon: https://pokeapi.co/api/v2/egg-group/3/
+    let pokemonNumber = this.randomInt(9);
 
-    let pokemonNumber = this.randomInt(10);
-    console.log(pokemonNumber);
+    axios.get('http://localhost:3062/encounter', {params: {number: pokemonNumber}})
+    .then((data)=>{console.log("this is received: ", data)})
 
-    //api request for pokemon
-    //.then (generate random number for catch rate and flee rate)
+
+
     this.setState({pokemon: "pikachu"}, ()=>{
 
       let catchRangeMax = this.state.catchRange[1];

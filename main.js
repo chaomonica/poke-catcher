@@ -22,7 +22,8 @@ const storage = new Storage({
   defaults: {
     // 800x600 is the default size the window
     windowBounds: { width: 800, height: 600 },
-    pokemon: {bulbasaur: "hi"}
+    pokemon: {bulbasaur: "hi"},
+
 
   }
 });
@@ -36,7 +37,12 @@ app.on('ready', function() {
   //const incon = new Tray ('./dist/icon.png')
 
   // pass those values in to the BrowserWindow options
-  mainWindow = new BrowserWindow({ width, height, icon: 'icon.ico' });
+  mainWindow = new BrowserWindow({
+    width: width,
+    height: height,
+    webPreferences: {
+    nodeIntegration: true
+}});
 
   // The BrowserWindow class extends the node.js core EventEmitter class, so we use that API
   // to listen to events on the BrowserWindow. The resize event is emitted when the window size changes.
@@ -47,8 +53,8 @@ app.on('ready', function() {
     storage.set('windowBounds', { width, height });
   });
 
-  mainWindow.loadURL('http://localhost:3009/');
-  //mainWindow.loadURL('https://poke-catcher-m.herokuapp.com/');
+  //mainWindow.loadURL('http://localhost:3009/');
+  mainWindow.loadURL('https://poke-catcher-m.herokuapp.com/');
 });
 
 /*
