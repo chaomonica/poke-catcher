@@ -7,20 +7,17 @@
     "node": "12.x"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
+    "start": "node server/index.js",
+    "build": "webpack -d --watch",
     "postinstall": "npm run build",
 
     "start2": "nodemon server/index.js",
-    "electron-start": "electron .",
-    "build:dev": "webpack -d --watch"
+    "electron-start": "electron ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "Dependencies": {
     "electron": "^11.1.0",
     "nodemon": "^1.18.10",
     "webpack-cli": "^3.3.12",
