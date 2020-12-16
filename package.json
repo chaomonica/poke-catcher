@@ -4,8 +4,8 @@
   "description": "Gotta Catch 'Em ALL!",
   "main": "server/index.js",
   "engines": {
-    "node": "12.18.3",
-    "npm": "12.18.3"
+    "node": "12.18.x",
+    "npm": "6.14.x"
   },
   "scripts": {
     "start": "node server/index.js",
