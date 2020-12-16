@@ -45,4 +45,7 @@ function parseDataFile(filePath, defaults) {
   }
 }
 
-module.exports = Storage;
+module.exports = {
+  get: get,
+  set: set
+};

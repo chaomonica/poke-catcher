@@ -12,7 +12,8 @@
     "heroku-prebuild": "npm install --dev",
 
     "electron-start": "electron .",
-    "build:dev": "webpack -d --watch"
+    "build:dev": "webpack -d --watch",
+    "start:dev": "nodemon server/index.js"
   },
   "keywords": [],
   "author": "",

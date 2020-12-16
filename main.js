@@ -47,7 +47,8 @@ app.on('ready', function() {
     storage.set('windowBounds', { width, height });
   });
 
-  mainWindow.loadURL(`http://localhost:${process.env.PORT}/`);
+  mainWindow.loadURL('http://localhost:3009/');
+  //mainWindow.loadURL('https://poke-catcher-m.herokuapp.com/');
 });
 
 /*
@@ -82,4 +83,4 @@ app.on('activate', () => {
 
 */
 
-module.export = {storage}
+module.export = {storage: storage}
