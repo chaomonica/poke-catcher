@@ -24,7 +24,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/chaomonica/poke-catcher">
     <img src="dist/pikachu.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -165,7 +165,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/chaomonica/poke-catcher](https://github.com/chaomonica/poke-catcher)
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -176,16 +176,16 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/chaomonica/poke-catcher.svg?style=for-the-badge
 [contributors-url]: https://github.com/chaomonica/poke-catcher/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/chaomonica/poke-catcher.svg?style=for-the-badge
 [forks-url]: https://github.com/chaomonica/poke-catcher/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/chaomonica/poke-catcher.svg?style=for-the-badge
 [stars-url]: https://github.com/chaomonica/poke-catcher/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/chaomonica/poke-catcher.svg?style=for-the-badge
 [issues-url]: https://github.com/chaomonica/poke-catcher/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/chaomonica/poke-catcher.svg?style=for-the-badge
+[license-url]: https://github.com/chaomonica/poke-catcher/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/chaomonica
 [product-screenshot]: images/screenshot.png
