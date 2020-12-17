@@ -6,6 +6,7 @@ import Encounter from './components/Encounter.jsx';
 
 import './components/style.css';
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);

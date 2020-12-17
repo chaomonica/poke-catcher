@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 import RandomPokemon from './RandomPokemon.jsx';
-import Modal from '@material-ui/core/Modal';
+import Example from './Modal.jsx'
 
 
 
@@ -28,9 +28,24 @@ class Encounter extends React.Component {
     this.handleThrowRock = this.handleThrowRock.bind(this);
     this.handleRunAway = this.handleRunAway.bind(this);
     this.handleVisitProfessor = this.handleVisitProfessor.bind(this);
+    this.test = this.test.bind(this);
   }
 
+  componentDidMount() {
+    axios.get('/visitProfessor')
+    .then((teamFromDatabase)=>{
+      let arr = ["You've caught "];
 
+      for (var i = 0; i < teamFromDatabase.data.length; i++) {
+
+        arr.push(`${teamFromDatabase.data[i].name} a ${teamFromDatabase.data[i].species} on ${teamFromDatabase.data[i].date}, `)
+      }
+
+      let final = arr.join(" ");
+
+     this.setState({caughtPokemon: final})
+    })
+  }
 
   randomInt(max){
     return Math.floor(Math.random() * Math.floor(max));
@@ -66,7 +81,7 @@ class Encounter extends React.Component {
     console.log("You threw a ball")
     let thrownBall = this.randomInt(this.state.catchRange[1]);
     console.log('thrown ball is; ', thrownBall)
-    if (this.state.caught === thrownBall) {
+    if (this.state.caught === thrownBall || thrownBall===2 || thrownBall === 3 || thrownBall === 7) {
 
       axios.post('./sendProfessor', {
         number: this.state.number,
@@ -158,9 +173,13 @@ class Encounter extends React.Component {
 
       let final = arr.join(" ");
 
-      console.log(arr)
-      alert(final)
+      this.setState({caughtPokemon: final})
+
     })
+  }
+
+  test() {
+    console.log('test')
   }
 
   render () {
@@ -184,7 +203,16 @@ class Encounter extends React.Component {
         <button onClick={this.generateRandomPokemon}>venture into the woods</button>
         <br></br>
         <br></br>
-        <button onClick={this.handleVisitProfessor}>Visit Professor Birch</button>
+
+        <button onClick={this.handleVisitProfessor}>Send to Pokebox</button>
+        <br></br>
+
+        <Example caughtPokemon={this.state.caughtPokemon}/>
+
+
+
+        <br />
+
 
       </div>)
     } else {
