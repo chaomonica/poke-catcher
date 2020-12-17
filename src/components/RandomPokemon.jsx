@@ -16,9 +16,14 @@ class RandomPokemon extends React.Component {
 
 
   render () {
+    let pokemonAppearedStr = 'A wild pokemon appeared!'
+    if (this.props && this.props.pokemonName) {
+      pokemonAppearedStr = `A wild ${this.props.pokemonName} appeared!`;
+    }
+    console.log("these are props", this.props)
     return (<div>
-      <p>it's a pokemon!</p>
-      <img id='professor' src={'./pikachu.png'} />
+      <p>{pokemonAppearedStr}</p>
+      <img id='professor' className='photo' src={this.props.pokemonImage || './pikachu.png'} />
 
 
     </div>)

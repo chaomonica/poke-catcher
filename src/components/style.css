@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  margin: 0px;
+  color: #ffd700;
+}
+
+.app {
+  display: flex;
+  flex-flow: row;
+}
+
+.txn {
+  width: 80%;
+  margin: 20px;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+}
+
+.professor {
+  width: 300px;
+  height: 300px;
+}
+
+p {
+  color: black;
+  white-space: pre-wrap;
+}
+.forest {
+  background-image: url("../../dist/forest.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  color: black;
+  background-color: white;
+}

@@ -4,9 +4,7 @@ import ReactDOM from 'react-dom';
 import Professor from './components/Professor.jsx';
 import Encounter from './components/Encounter.jsx';
 
-//const stor = require("../dist/bugPokemon.json");
-// import storage from '../main.js';
-
+import './components/style.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -18,6 +16,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    console.warn(process.env.API_URL)
   }
 
   setGender(boyOrGirl) {
@@ -29,19 +28,14 @@ class App extends React.Component {
   render() {
     if (this.state.gender.length === 0) {
       return ( <div>
-        <p>Welcome to the wonderful world of Pokemon!</p>
+        <p>Hi! Sorry to keep you waiting! Welcome to the world of Pokemon!{"\n"}My name is Birch. But everyone calls me the Pokemon Professor...{"\n"}and you are?</p>
          <Professor setGender={this.setGender}/>
-
        </div>)
-    }
-    else {
+    } else {
       return (<div>
-        <h1>Oh! You are a {this.state.gender}!</h1>
-       <Encounter />
+       <Encounter gender={this.state.gender}/>
      </div>)
     }
-
   }
 }
-
 ReactDOM.render(<App />, document.getElementById('app'));

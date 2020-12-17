@@ -44,3 +44,18 @@ INSERT INTO
     pokemon(number, name, catchMax, fleeMax, regURL)
 VALUES
     (43, 'oddish', 5, 10, 'https://img.pokemondb.net/artwork/large/oddish.jpg');
+
+
+
+CREATE TABLE IF NOT EXISTS team (
+  id SERIAL PRIMARY KEY,
+  number INT NOT NULL,
+  species VARCHAR(50) NOT NULL,
+  name VARCHAR(50),
+  date VARCHAR(50) NOT NULL,
+  regURL VARCHAR(200) NOT NULL
+);
+
+INSERT INTO team(number, species, name, date, reqURL)
+VALUES
+()

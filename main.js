@@ -53,8 +53,8 @@ app.on('ready', function() {
     storage.set('windowBounds', { width, height });
   });
 
-  //mainWindow.loadURL('http://localhost:3009/');
-  mainWindow.loadURL('https://poke-catcher-m.herokuapp.com/');
+  mainWindow.loadURL('http://localhost:3455/');
+  //mainWindow.loadURL('https://poke-catcher-m.herokuapp.com/');
 });
 
 /*

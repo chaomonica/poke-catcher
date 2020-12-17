@@ -12,5 +12,8 @@ const db = require('../database/connection');
 //Endpoints
 router.get('/encounter', db.generatePokemon);
 router.get('/test', db.test);
+router.post('/sendProfessor', db.sendProfessor);
+router.get('/visitProfessor', db.visitProfessor)
+
 
 module.exports = router;
