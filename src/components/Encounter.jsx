@@ -81,7 +81,7 @@ class Encounter extends React.Component {
     console.log("You threw a ball")
     let thrownBall = this.randomInt(this.state.catchRange[1]);
     console.log('thrown ball is; ', thrownBall)
-    if (this.state.caught === thrownBall || thrownBall===2 || thrownBall === 3 || thrownBall === 7) {
+    if (this.state.caught === thrownBall || thrownBall===2 || thrownBall === 3 || thrownBall === 7 || thrownBall === 8 || thrownBall === 9 ) {
 
       axios.post('./sendProfessor', {
         number: this.state.number,
@@ -99,8 +99,9 @@ class Encounter extends React.Component {
           })
 
       })
-    }
-    else {console.log("you missed")}
+    } else {
+
+    console.log("you missed")
 
     let currAttempts = this.state.attempts + 1;
 
@@ -113,6 +114,8 @@ class Encounter extends React.Component {
         alert('The pokemon fled...')
       })
     }
+    }
+
 
   }
 
@@ -199,7 +202,7 @@ class Encounter extends React.Component {
         <br></br>
         <br></br>
         <br></br>
-        <p className="overlay">If you are ready to go exploring, click the button below</p>
+        <p className="overlay"><span>If you are ready to go exploring, click the button below</span></p>
         <button onClick={this.generateRandomPokemon}>venture into the woods</button>
         <br></br>
         <br></br>

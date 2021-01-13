@@ -41,5 +41,8 @@ p {
 }
 .overlay {
   color: black;
+}
+.overlay span {
   background-color: white;
+  opacity: 0.7;
 }
